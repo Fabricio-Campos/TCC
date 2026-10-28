@@ -1,0 +1,250 @@
+/* PAINEL */
+h1{
+  font-size: 40px;
+  color: #152039;
+  padding: 2px 0 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#alink{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#alink a{
+  text-decoration: none;
+}
+#alink a:hover{
+  text-decoration: none;
+}
+#alink button{
+  background: #c7c7c73b;
+  border: 0px;
+  height: 250px;
+  position: center;
+  color: rgb(255, 140, 0);
+}
+
+#alink button:hover{
+  color: rgb(255, 145, 0);
+}
+
+#alink p{
+  color:black;
+}
+
+.col{
+  display: inline-block;
+  border-radius: 5px;
+  padding: 25px 25px;
+  box-sizing: border-box;
+  margin: 40px 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 300px;
+  align-items: center;
+}
+.col:hover{
+  transform: translateY(-10px);
+}
+
+.col{
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.col:before{
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: rgba(255, 140, 0, 0.329);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44,1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.col:hover:before {
+  animation: opacityFallbackIn .5s step-start forwards;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.col4{
+    margin-top: 3rem!important;
+    width: 100%;  
+    height: auto;
+    align-items: center;
+}
+
+.col4 a{
+  text-decoration: none;
+}
+
+.col4 button{
+  align-items: center;
+  background-color: rgb(255, 140, 0);
+  border: 3px solid rgb(255, 140, 0);
+  border-radius: 20%;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  transition: transform 0.5s;
+}
+
+.col4 button:hover{
+  border: 3px solid rgb(218, 120, 0);
+  background-color: rgb(218, 120, 0);
+  box-shadow: rgba(0, 0, 0, 0.1);
+  color:  rgb(255, 255, 255);
+}
+
+.col4 button:hover {
+  transform: translateY(-5px);
+}
+
+
+.footer-content{    
+  padding: 50px;
+  height: 200px;
+  width: 90%;    
+  margin: 0px auto 0px auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.canto{
+  width: 100%;
+  position:relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notific{
+  z-index: 900;
+  margin: 0 auto 0 auto;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  align-items: flex-end;
+  height: auto;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.aviso {
+  margin: 10px;
+  color: #ffffff;
+  background: rgb(251, 87, 87);
+  /* padding: 20px; */
+}
+.text{
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.atencao{  
+  margin: 10px;  
+  /* padding: 20px;  */
+  background: rgb(250, 250, 19);
+  color: black;
+}
+
+
+.aviso p{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.atencao p{
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+
+.a{
+  content: "";
+  position: relative;
+  left:0 ;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: time 3s forwards;
+}
+
+@keyframes time {
+  0%{
+    width: 0;  
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+
+/* .ok div{
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+}
+
+.ok{
+  margin:20px;
+  display:flex; 
+  height: auto;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;  
+}
+
+.ok div:nth-of-type(1){
+  transform: rotate(140deg);
+}
+.ok div:nth-of-type(2){
+  transform: rotate(-140deg);
+} 
+
+.ok:hover div{
+  background-color: darkorange;
+} */
+
+/* .message{
+  padding: 19px 60px;
+  position: fixed;
+  top:20px;
+  right: 150px;
+  background-color: #152039;
+  animation: slidein 0.2s cubic-bezier(0.25,0.46,0.45.0.94) both;
+}
+@keyframes slidein{
+  0%{
+    transform:translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateX(0);
+    opacity: 1;
+  }
+} */
