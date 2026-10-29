@@ -53,15 +53,13 @@ Três tabelas principais:
 
 ## Prints
 
-<!-- Coloque os prints na pasta docs/img e ajuste os nomes abaixo -->
-
 | Login | Painel de controle |
 |---|---|
-| ![Login](docs/img/login.png) | ![Painel](docs/img/painel.png) |
+| ![Login](docs/images/login.png) | ![Painel](docs/images/painel-geral.png) |
 
 | Cadastro de produto | Controle de estoque |
 |---|---|
-| ![Cadastro](docs/img/cadastro-produto.png) | ![Estoque](docs/img/controle-estoque.png) |
+| ![Cadastro](docs/images/cadastro-produtos.png) | ![Estoque](docs/images/controle-estoque.png) |
 
 ## Como executar
 
